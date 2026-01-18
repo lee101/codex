@@ -209,7 +209,7 @@ impl ReasoningSummaryCell {
             Some((width as usize).saturating_sub(2)),
             &mut lines,
         );
-        let summary_style = Style::default().dim().italic();
+        let summary_style = Style::default().fg(Color::Gray);
         let summary_lines = lines
             .into_iter()
             .map(|mut line| {
