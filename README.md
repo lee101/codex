@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./.github/milhouse.png" alt="Milhouse" width="200" />
+  <img src="./.github/milhouse-200h.webp" alt="Milhouse" height="200" />
 </p>
 
 <h1 align="center">Milhouse</h1>
@@ -51,6 +51,31 @@ You can also use Milhouse with an API key.
 - **Idea generation** - Can brainstorm and implement improvements
 - **Local execution** - Runs entirely on your machine
 - **Full Codex compatibility** - All Codex features work in Milhouse
+
+## Development
+
+### Build from source (Rust CLI)
+
+```bash
+cd codex-rs
+cargo build --release -p codex-cli
+
+# Run the TUI
+cargo run --bin codex -- "your prompt here"
+```
+
+### Build TypeScript CLI
+
+```bash
+cd codex-cli
+npm install
+```
+
+### Project structure
+
+- `codex-rs/` - Rust workspace (TUI, core, sandbox, etc.)
+- `codex-cli/` - TypeScript CLI wrapper (npm package)
+- `sdk/` - TypeScript SDK
 
 ## Docs
 
